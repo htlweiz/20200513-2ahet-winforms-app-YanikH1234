@@ -124,6 +124,7 @@ namespace BasicMathOperations1
             }
         }
 
+
         private void btnDivision_Click(object sender, EventArgs e)
         {
             int number1, number2, result;
