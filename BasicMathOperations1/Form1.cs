@@ -74,6 +74,7 @@ namespace BasicMathOperations1
 
         }
 
+
         private void btnMinus_Click(object sender, EventArgs e)
         {
             int number1, number2, result;
