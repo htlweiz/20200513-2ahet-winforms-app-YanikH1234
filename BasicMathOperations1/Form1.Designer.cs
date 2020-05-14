@@ -45,10 +45,10 @@
             // lblTitle
             // 
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(77, 14);
+            this.lblTitle.Location = new System.Drawing.Point(51, 14);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(383, 51);
+            this.lblTitle.Size = new System.Drawing.Size(409, 51);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Einfache Rechenoperationen";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -87,11 +87,10 @@
             // 
             this.txtNumber1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumber1.Location = new System.Drawing.Point(127, 90);
-            this.txtNumber1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumber1.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumber1.Name = "txtNumber1";
             this.txtNumber1.Size = new System.Drawing.Size(151, 26);
             this.txtNumber1.TabIndex = 4;
-            this.txtNumber1.Text = "0";
             this.txtNumber1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtNumber1.TextChanged += new System.EventHandler(this.txtNumber1_TextChanged);
             // 
@@ -99,7 +98,7 @@
             // 
             this.txtNumber2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumber2.Location = new System.Drawing.Point(127, 128);
-            this.txtNumber2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumber2.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumber2.Name = "txtNumber2";
             this.txtNumber2.Size = new System.Drawing.Size(151, 26);
             this.txtNumber2.TabIndex = 5;
@@ -122,7 +121,7 @@
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(312, 92);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(44, 40);
             this.btnAdd.TabIndex = 7;
@@ -134,7 +133,7 @@
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.Location = new System.Drawing.Point(219, 212);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(56, 38);
             this.btnClear.TabIndex = 8;
@@ -167,7 +166,7 @@
             // btnDivision
             // 
             this.btnDivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDivision.Location = new System.Drawing.Point(371, 152);
+            this.btnDivision.Location = new System.Drawing.Point(372, 155);
             this.btnDivision.Name = "btnDivision";
             this.btnDivision.Size = new System.Drawing.Size(43, 42);
             this.btnDivision.TabIndex = 11;
@@ -193,7 +192,7 @@
             this.Controls.Add(this.lblNumber2);
             this.Controls.Add(this.lblNumber1);
             this.Controls.Add(this.lblTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
