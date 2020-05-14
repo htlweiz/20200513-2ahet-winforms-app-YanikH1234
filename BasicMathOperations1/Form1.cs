@@ -84,7 +84,7 @@ namespace BasicMathOperations1
                 number2 = Convert.ToInt32(txtNumber2.Text);
                 result = number1 - number2;
                 lblResult.Text = Convert.ToString(result);
-                lblResultType.Text = "Summe";
+                lblResultType.Text = "Diverenz";
             }
             catch(Exception ex)
             {
@@ -108,7 +108,7 @@ namespace BasicMathOperations1
                 number2 = Convert.ToInt32(txtNumber2.Text);
                 result = number1 * number2;
                 lblResult.Text = Convert.ToString(result);
-                lblResultType.Text = "Summe";
+                lblResultType.Text = "Produkt";
             }
             catch (Exception ex)
             {
@@ -132,7 +132,7 @@ namespace BasicMathOperations1
                 number2 = Convert.ToInt32(txtNumber2.Text);
                 result = number1 / number2;
                 lblResult.Text = Convert.ToString(result);
-                lblResultType.Text = "Summe";
+                lblResultType.Text = "Quotient";
             }
             catch (Exception ex)
             {
