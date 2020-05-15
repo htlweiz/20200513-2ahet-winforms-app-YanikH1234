@@ -127,16 +127,29 @@ namespace BasicMathOperations1
 
         private void btnDivision_Click(object sender, EventArgs e)
         {
-            int number1, number2, result;
-
+            int number1, number2;
+            double result;
+            
             try
             {
                 number1 = Convert.ToInt32(txtNumber1.Text);
                 number2 = Convert.ToInt32(txtNumber2.Text);
-                result = number1 / number2;
-                lblResult.Text = Convert.ToString(result);
-                lblResultType.Text = "Quotient";
+
+                //test if denominator is equal to 0
+                if (number2 == 0)
+                {
+                    lblResultType.Text = "Fehler";
+                    MessageBox.Show("Division durch 0", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                  
+                    result = (double)number1 / number2;
+                    lblResult.Text = Convert.ToString(result);
+                    lblResultType.Text = "Quotient";
+                }
             }
+
             catch (Exception ex)
             {
 
@@ -148,6 +161,16 @@ namespace BasicMathOperations1
                 txtNumber1.Focus();
                 txtNumber1.SelectAll();
             }
+        }
+
+        private void btnroot_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNumber1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

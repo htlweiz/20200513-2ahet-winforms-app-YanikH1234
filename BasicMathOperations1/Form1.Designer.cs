@@ -40,6 +40,8 @@
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnMultiplicate = new System.Windows.Forms.Button();
             this.btnDivision = new System.Windows.Forms.Button();
+            this.btnroot = new System.Windows.Forms.Button();
+            this.btnpayup = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -62,6 +64,7 @@
             this.lblNumber1.Size = new System.Drawing.Size(73, 25);
             this.lblNumber1.TabIndex = 1;
             this.lblNumber1.Text = "Zahl 1";
+            this.lblNumber1.Click += new System.EventHandler(this.lblNumber1_Click);
             // 
             // lblNumber2
             // 
@@ -91,6 +94,7 @@
             this.txtNumber1.Name = "txtNumber1";
             this.txtNumber1.Size = new System.Drawing.Size(151, 26);
             this.txtNumber1.TabIndex = 4;
+            this.txtNumber1.Text = "0";
             this.txtNumber1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtNumber1.TextChanged += new System.EventHandler(this.txtNumber1_TextChanged);
             // 
@@ -120,10 +124,10 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(312, 92);
+            this.btnAdd.Location = new System.Drawing.Point(322, 92);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(44, 40);
+            this.btnAdd.Size = new System.Drawing.Size(44, 43);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -146,7 +150,7 @@
             this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinus.Location = new System.Drawing.Point(371, 92);
             this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(44, 40);
+            this.btnMinus.Size = new System.Drawing.Size(44, 43);
             this.btnMinus.TabIndex = 9;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
@@ -155,24 +159,44 @@
             // btnMultiplicate
             // 
             this.btnMultiplicate.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicate.Location = new System.Drawing.Point(312, 152);
+            this.btnMultiplicate.Location = new System.Drawing.Point(322, 152);
             this.btnMultiplicate.Name = "btnMultiplicate";
             this.btnMultiplicate.Size = new System.Drawing.Size(44, 43);
             this.btnMultiplicate.TabIndex = 10;
-            this.btnMultiplicate.Text = "x";
+            this.btnMultiplicate.Text = "*";
             this.btnMultiplicate.UseVisualStyleBackColor = true;
             this.btnMultiplicate.Click += new System.EventHandler(this.btnMultiplicate_Click);
             // 
             // btnDivision
             // 
             this.btnDivision.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDivision.Location = new System.Drawing.Point(372, 155);
+            this.btnDivision.Location = new System.Drawing.Point(372, 152);
             this.btnDivision.Name = "btnDivision";
-            this.btnDivision.Size = new System.Drawing.Size(43, 42);
+            this.btnDivision.Size = new System.Drawing.Size(44, 43);
             this.btnDivision.TabIndex = 11;
             this.btnDivision.Text = "/";
             this.btnDivision.UseVisualStyleBackColor = true;
             this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
+            // 
+            // btnroot
+            // 
+            this.btnroot.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnroot.Location = new System.Drawing.Point(421, 92);
+            this.btnroot.Name = "btnroot";
+            this.btnroot.Size = new System.Drawing.Size(44, 43);
+            this.btnroot.TabIndex = 12;
+            this.btnroot.Text = "√(a&x)";
+            this.btnroot.UseVisualStyleBackColor = true;
+            this.btnroot.Click += new System.EventHandler(this.btnroot_Click);
+            // 
+            // btnpayup
+            // 
+            this.btnpayup.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpayup.Location = new System.Drawing.Point(421, 152);
+            this.btnpayup.Name = "btnpayup";
+            this.btnpayup.Size = new System.Drawing.Size(44, 43);
+            this.btnpayup.TabIndex = 13;
+            this.btnpayup.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -180,6 +204,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(533, 292);
+            this.Controls.Add(this.btnpayup);
+            this.Controls.Add(this.btnroot);
             this.Controls.Add(this.btnDivision);
             this.Controls.Add(this.btnMultiplicate);
             this.Controls.Add(this.btnMinus);
@@ -214,6 +240,8 @@
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Button btnMultiplicate;
         private System.Windows.Forms.Button btnDivision;
+        private System.Windows.Forms.Button btnroot;
+        private System.Windows.Forms.Button btnpayup;
     }
 }
 
