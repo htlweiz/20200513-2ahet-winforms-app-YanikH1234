@@ -191,12 +191,15 @@
             // 
             // btnpayup
             // 
-            this.btnpayup.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpayup.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnpayup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnpayup.Location = new System.Drawing.Point(421, 152);
             this.btnpayup.Name = "btnpayup";
             this.btnpayup.Size = new System.Drawing.Size(44, 43);
             this.btnpayup.TabIndex = 13;
+            this.btnpayup.Text = "a^x";
             this.btnpayup.UseVisualStyleBackColor = true;
+            this.btnpayup.Click += new System.EventHandler(this.btnpayup_Click);
             // 
             // Form1
             // 

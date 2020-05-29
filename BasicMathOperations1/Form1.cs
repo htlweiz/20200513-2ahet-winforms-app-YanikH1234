@@ -135,7 +135,7 @@ namespace BasicMathOperations1
                 number1 = Convert.ToInt32(txtNumber1.Text);
                 number2 = Convert.ToInt32(txtNumber2.Text);
 
-                //test if denominator is equal to 0
+                
                 if (number2 == 0)
                 {
                     lblResultType.Text = "Fehler";
@@ -165,11 +165,42 @@ namespace BasicMathOperations1
 
         private void btnroot_Click(object sender, EventArgs e)
         {
-
+                      
         }
 
         private void lblNumber1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnpayup_Click(object sender, EventArgs e)
+        {
+            double number1, number2, result;
+            try
+            {
+                number1 = Convert.ToDouble(txtNumber1.Text);
+                number2 = Convert.ToDouble(txtNumber2.Text);
+                if ((number1 == 0) && (number2 <= 0))
+                {
+                    MessageBox.Show("Ergebnis nicht definiert!", "Eingabefehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    result = Math.Pow(number1, number2);
+                    lblResult.Text = Convert.ToString(result);
+                    lblResultType.Text = "Ergebnis";
+                }
+            }
+            catch (Exception ex)
+            {
+                lblResultType.Text = "Fehler";
+                lblResult.Text = "Kein numerischer Wert!";
+
+                MessageBox.Show(ex.Message, "Eingabefehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                txtNumber1.Focus();
+                txtNumber1.SelectAll();
+            }
 
         }
     }
